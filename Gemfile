@@ -29,6 +29,9 @@ gem 'sprockets', '2.11.0'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
+
 gem 'rails_12factor', group: :production
 
 group :doc do
