@@ -4,6 +4,26 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
+  <div class="clear"></div>
+  <!-- Photo part -->
+     
+      <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+        <%= f.input :caption %>
+        <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+      <% end %>
+      
+      <h1>Photos</h1>
+
+          <% @place.photos.each do |photo| %>
+            <div>
+              <blockquote>
+                <b><%= comment.caption %></b> -
+                <small><%= comment.user.email %></small>
+              </blockquote>
+            </div>
+          <% end %>
+  
+
 <style>
       html, body {
         height: 100%;
@@ -59,6 +79,9 @@ function initMap() {
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title" id="myModalLabel">Add a comment</h4>
       </div>
+      
+       <div class="clear"></div>
+
       <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
         <div class="modal-body">
           <%= f.input :message %>
