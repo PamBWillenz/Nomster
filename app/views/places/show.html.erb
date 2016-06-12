@@ -23,21 +23,26 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <%= f.submit "Add a Photo", :class => 'btn btn-primary' %>
+        <br />
       </div>
     <% end %>  
     </div>
   </div>
 </div>
 
+<hr>
 
-      
-      <h1>Photos</h1>
+<% if @place.photos.present? %>
 
+        <figure>
           <% @place.photos.each do |photo| %>
             <%= image_tag photo.picture, :class => 'img-responsive, center-block' %>
-            <br />
             <figcaption class="text-center"><%= photo.caption %></figcaption>
+
+            <br />
           <% end %>
+        </figure>
+<% end %>
   
 
 <style>
