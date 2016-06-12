@@ -40,6 +40,8 @@ gem "figaro", ">= 1.0.0"
 
 gem 'carrierwave'
 
+gem "fog"
+
 gem 'rails_12factor', group: :production
 
 group :doc do
