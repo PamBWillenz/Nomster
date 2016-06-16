@@ -93,10 +93,21 @@ figure {
 }
 
 figcaption {
-  font-size: 20px;
-  font-weight:45;
+  font-size: 30px;
+  font-weight:60;
 }
+
 
 .photo-grid {
   margin-bottom: 25px;
 }
+
+.img-responsive {
+  border-radius: 25px;
+  /*background: url(paper.gif);*/
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+}  
+
+
