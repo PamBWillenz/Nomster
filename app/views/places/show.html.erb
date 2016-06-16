@@ -33,15 +33,17 @@
 <hr>
 
 <% if @place.photos.present? %>
-
-        <figure>
-          <% @place.photos.each do |photo| %>
+  <div class="gallery">
+    <figure class="gallery_image-wrapper">
+      <% @place.photos.each do |photo| %>
             <%= image_tag photo.picture, :class => 'img-responsive, center-block' %>
             <figcaption class="text-center"><%= photo.caption %></figcaption>
-
-            <br />
-          <% end %>
-        </figure>
+      <br />
+      <br />
+      <% end %>
+    </figure>
+  </div>
+    <hr>
 <% end %>
   
 
