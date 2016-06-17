@@ -103,11 +103,17 @@ figcaption {
 }
 
 .img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
   border-radius: 25px;
-  /*background: url(paper.gif);*/
   background-position: left top;
   background-repeat: repeat;
-  padding: 20px; 
+  padding: 20px;
 }  
-
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
