@@ -38,6 +38,8 @@ gem 'will_paginate-bootstrap'
 gem "geocoder", "1.3.4"
 gem "figaro", ">= 1.0.0"
 
+gem "nokogiri", '~> 1.8.2'
+
 gem 'carrierwave'
 
 gem "fog"
